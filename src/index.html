@@ -6,8 +6,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1>Validador de tarjeta</h1>
+    </header>
+    <main>
+      <h3>Ingrese el número de su tarjeta</h3>
+      <section class="container">
+        <form id="form" action="">
+      <!-- pattern es un atributo que permite definir mediante una expresión regular cuál es el formato que 
+      el usuario debe ingresar en ese input. [0-9]+ se traduce en solo dígitos y el modificador + indica que
+    puede ser uno o más dígitos-->
+      <input type="text" name="number" minlength="11" maxlength="16" id="creditCardNumber" autocomplete="off" 
+      placeholder="Ingrese solo números" required/>
+      <br>
+      <br>
+      <button id="btnValidate">Validar</button>
+    </form>
+  </section>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
